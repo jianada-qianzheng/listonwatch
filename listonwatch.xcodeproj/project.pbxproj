@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D97798022D10BBE0042D53E /* listonwatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9D97797F22D10BBE0042D53E /* listonwatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D97798622D10BBF0042D53E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D97798422D10BBF0042D53E /* Interface.storyboard */; };
+		9D97798822D10BC10042D53E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D97798722D10BC10042D53E /* Assets.xcassets */; };
+		9D97798F22D10BC10042D53E /* listonwatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D97798E22D10BC10042D53E /* listonwatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D97799422D10BC10042D53E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97799322D10BC10042D53E /* ContentView.swift */; };
+		9D97799622D10BC10042D53E /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97799522D10BC10042D53E /* HostingController.swift */; };
+		9D97799822D10BC10042D53E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97799722D10BC10042D53E /* ExtensionDelegate.swift */; };
+		9D97799A22D10BC10042D53E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D97799922D10BC10042D53E /* ComplicationController.swift */; };
+		9D97799C22D10BC20042D53E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D97799B22D10BC20042D53E /* Assets.xcassets */; };
+		9D97799F22D10BC20042D53E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D97799E22D10BC20042D53E /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D97798122D10BBE0042D53E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D97797522D10BBE0042D53E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D97797E22D10BBE0042D53E;
+			remoteInfo = "listonwatch WatchKit App";
+		};
+		9D97799022D10BC10042D53E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D97797522D10BBE0042D53E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D97798D22D10BC10042D53E;
+			remoteInfo = "listonwatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D9779A622D10BC20042D53E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D97798F22D10BC10042D53E /* listonwatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D9779AA22D10BC20042D53E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9D97798022D10BBE0042D53E /* listonwatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9D97797B22D10BBE0042D53E /* listonwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listonwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D97797F22D10BBE0042D53E /* listonwatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "listonwatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D97798522D10BBF0042D53E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9D97798722D10BC10042D53E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D97798922D10BC10042D53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D97798E22D10BC10042D53E /* listonwatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "listonwatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D97799322D10BC10042D53E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D97799522D10BC10042D53E /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		9D97799722D10BC10042D53E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9D97799922D10BC10042D53E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		9D97799B22D10BC20042D53E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D97799E22D10BC20042D53E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D9779A022D10BC20042D53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D97798B22D10BC10042D53E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D97797422D10BBE0042D53E = {
+			isa = PBXGroup;
+			children = (
+				9D97798322D10BBE0042D53E /* listonwatch WatchKit App */,
+				9D97799222D10BC10042D53E /* listonwatch WatchKit Extension */,
+				9D97797C22D10BBE0042D53E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D97797C22D10BBE0042D53E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D97797B22D10BBE0042D53E /* listonwatch.app */,
+				9D97797F22D10BBE0042D53E /* listonwatch WatchKit App.app */,
+				9D97798E22D10BC10042D53E /* listonwatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D97798322D10BBE0042D53E /* listonwatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9D97798422D10BBF0042D53E /* Interface.storyboard */,
+				9D97798722D10BC10042D53E /* Assets.xcassets */,
+				9D97798922D10BC10042D53E /* Info.plist */,
+			);
+			path = "listonwatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		9D97799222D10BC10042D53E /* listonwatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9D97799322D10BC10042D53E /* ContentView.swift */,
+				9D97799522D10BC10042D53E /* HostingController.swift */,
+				9D97799722D10BC10042D53E /* ExtensionDelegate.swift */,
+				9D97799922D10BC10042D53E /* ComplicationController.swift */,
+				9D97799B22D10BC20042D53E /* Assets.xcassets */,
+				9D9779A022D10BC20042D53E /* Info.plist */,
+				9D97799D22D10BC20042D53E /* Preview Content */,
+			);
+			path = "listonwatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9D97799D22D10BC20042D53E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9D97799E22D10BC20042D53E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D97797A22D10BBE0042D53E /* listonwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D9779AB22D10BC20042D53E /* Build configuration list for PBXNativeTarget "listonwatch" */;
+			buildPhases = (
+				9D97797922D10BBE0042D53E /* Resources */,
+				9D9779AA22D10BC20042D53E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D97798222D10BBE0042D53E /* PBXTargetDependency */,
+			);
+			name = listonwatch;
+			productName = listonwatch;
+			productReference = 9D97797B22D10BBE0042D53E /* listonwatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		9D97797E22D10BBE0042D53E /* listonwatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D9779A722D10BC20042D53E /* Build configuration list for PBXNativeTarget "listonwatch WatchKit App" */;
+			buildPhases = (
+				9D97797D22D10BBE0042D53E /* Resources */,
+				9D9779A622D10BC20042D53E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D97799122D10BC10042D53E /* PBXTargetDependency */,
+			);
+			name = "listonwatch WatchKit App";
+			productName = "listonwatch WatchKit App";
+			productReference = 9D97797F22D10BBE0042D53E /* listonwatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9D97798D22D10BC10042D53E /* listonwatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D9779A322D10BC20042D53E /* Build configuration list for PBXNativeTarget "listonwatch WatchKit Extension" */;
+			buildPhases = (
+				9D97798A22D10BC10042D53E /* Sources */,
+				9D97798B22D10BC10042D53E /* Frameworks */,
+				9D97798C22D10BC10042D53E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "listonwatch WatchKit Extension";
+			productName = "listonwatch WatchKit Extension";
+			productReference = 9D97798E22D10BC10042D53E /* listonwatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D97797522D10BBE0042D53E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "weizhi zhang";
+				TargetAttributes = {
+					9D97797A22D10BBE0042D53E = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					9D97797E22D10BBE0042D53E = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					9D97798D22D10BC10042D53E = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 9D97797822D10BBE0042D53E /* Build configuration list for PBXProject "listonwatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D97797422D10BBE0042D53E;
+			productRefGroup = 9D97797C22D10BBE0042D53E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D97797A22D10BBE0042D53E /* listonwatch */,
+				9D97797E22D10BBE0042D53E /* listonwatch WatchKit App */,
+				9D97798D22D10BC10042D53E /* listonwatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D97797922D10BBE0042D53E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D97797D22D10BBE0042D53E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D97798822D10BC10042D53E /* Assets.xcassets in Resources */,
+				9D97798622D10BBF0042D53E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D97798C22D10BC10042D53E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D97799F22D10BC20042D53E /* Preview Assets.xcassets in Resources */,
+				9D97799C22D10BC20042D53E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D97798A22D10BC10042D53E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D97799622D10BC10042D53E /* HostingController.swift in Sources */,
+				9D97799A22D10BC10042D53E /* ComplicationController.swift in Sources */,
+				9D97799422D10BC10042D53E /* ContentView.swift in Sources */,
+				9D97799822D10BC10042D53E /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D97798222D10BBE0042D53E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D97797E22D10BBE0042D53E /* listonwatch WatchKit App */;
+			targetProxy = 9D97798122D10BBE0042D53E /* PBXContainerItemProxy */;
+		};
+		9D97799122D10BC10042D53E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D97798D22D10BC10042D53E /* listonwatch WatchKit Extension */;
+			targetProxy = 9D97799022D10BC10042D53E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D97798422D10BBF0042D53E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D97798522D10BBF0042D53E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D9779A122D10BC20042D53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D9779A222D10BC20042D53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D9779A422D10BC20042D53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"listonwatch WatchKit Extension\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "listonwatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.weizhi.listonwatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		9D9779A522D10BC20042D53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"listonwatch WatchKit Extension\"/Preview\\ Content";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "listonwatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.weizhi.listonwatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		9D9779A822D10BC20042D53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = listonwatch_WatchKit_Extension;
+				INFOPLIST_FILE = "listonwatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.weizhi.listonwatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		9D9779A922D10BC20042D53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = listonwatch_WatchKit_Extension;
+				INFOPLIST_FILE = "listonwatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.weizhi.listonwatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		9D9779AC22D10BC20042D53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.weizhi.listonwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9D9779AD22D10BC20042D53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.weizhi.listonwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D97797822D10BBE0042D53E /* Build configuration list for PBXProject "listonwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D9779A122D10BC20042D53E /* Debug */,
+				9D9779A222D10BC20042D53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D9779A322D10BC20042D53E /* Build configuration list for PBXNativeTarget "listonwatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D9779A422D10BC20042D53E /* Debug */,
+				9D9779A522D10BC20042D53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D9779A722D10BC20042D53E /* Build configuration list for PBXNativeTarget "listonwatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D9779A822D10BC20042D53E /* Debug */,
+				9D9779A922D10BC20042D53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D9779AB22D10BC20042D53E /* Build configuration list for PBXNativeTarget "listonwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D9779AC22D10BC20042D53E /* Debug */,
+				9D9779AD22D10BC20042D53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D97797522D10BBE0042D53E /* Project object */;
+}
