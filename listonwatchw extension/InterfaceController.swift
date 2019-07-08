@@ -113,6 +113,8 @@ class InterfaceController: WKInterfaceController {
             let row = titleTable?.rowController(at:rowIndex) as? TitleRowType
 
             self.pushController(withName: "showDetails", context: row?.id)
+            
+            
 
         }
         

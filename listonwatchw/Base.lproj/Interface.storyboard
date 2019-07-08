@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pFm-ww-3cj">
-    <device id="watch38" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14835.7" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pFm-ww-3cj">
+    <device id="watch38"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14631.1"/>
     </dependencies>
     <scenes>
-        <!--list-->
+        <!--List on Watch-->
         <scene sceneID="Ohc-lJ-TLb">
             <objects>
-                <controller identifier="Table" title="list" id="pFm-ww-3cj" customClass="InterfaceController" customModule="ListOnWatchW_Extension">
+                <controller identifier="Table" title="List on Watch" id="pFm-ww-3cj" customClass="InterfaceController" customModule="ListOnWatchW_Extension">
                     <items>
                         <table alignment="left" id="uHR-jP-7kY">
                             <items>
@@ -186,4 +184,8 @@
             <point key="canvasLocation" x="304" y="44"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="check" width="150" height="150"/>
+        <image name="edit" width="256" height="256"/>
+    </resources>
 </document>

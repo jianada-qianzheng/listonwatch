@@ -31,7 +31,7 @@ class DetailInterfaceController: WKInterfaceController {
     @IBAction func AddItem() {
         print("add function")
         
-        self.presentTextInputController(withSuggestions: [""], allowedInputMode: WKTextInputMode.plain,
+        self.presentTextInputController(withSuggestions: [], allowedInputMode: WKTextInputMode.plain,
                                         completion:{(results) -> Void in
                                             let aResult = results?[0] as? String
                                             print(aResult)
@@ -115,11 +115,15 @@ class DetailInterfaceController: WKInterfaceController {
          self.listId = context as! Int
         print ("list id"+String(listId))
         
+        
         itemList = [List]()
         
         
         mode = 0
         initDataBase()
+        
+        readTitle(id: listId)
+
        // itemTable.setNumberOfRows(4, withRowType: "ListRowType")
         //insertTitle(titleInput: "list1-sqlite")
         readItem(id:self.listId)
@@ -136,6 +140,8 @@ class DetailInterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
     }
+    
+    
     
     
     
@@ -303,6 +309,48 @@ class DetailInterfaceController: WKInterfaceController {
         
         
         print("delete")
+        
+        
+    }
+    
+    func readTitle(id : Int){
+        
+        print("read title")
+        
+        let queryString = "SELECT * FROM titles where id = ?"
+        
+        //statement pointer
+        var stmt:OpaquePointer?
+        
+        //preparing the query
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert: \(errmsg)")
+            return
+        }
+        
+        if sqlite3_bind_int(stmt, 1, Int32(id)) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("failure binding current: \(errmsg)")
+            return
+        }
+        
+        //traversing through all the records
+        
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            let title = String(cString: sqlite3_column_text(stmt, 1))
+            print("set title")
+            
+            print(title)
+            
+            setTitle(title)
+            //adding values to list
+            
+            
+        }
+        
+        
+        
         
         
     }
