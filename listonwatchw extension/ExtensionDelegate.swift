@@ -1,9 +1,9 @@
 //
 //  ExtensionDelegate.swift
-//  listonwatch WatchKit Extension
+//  ListOnWatchW Extension
 //
-//  Created by weizhi zhang on 2019-07-06.
-//  Copyright © 2019 weizhi zhang. All rights reserved.
+//  Created by Yali Xiao on 2019-06-13.
+//  Copyright © 2019 weizhi.ca. All rights reserved.
 //
 
 import WatchKit
