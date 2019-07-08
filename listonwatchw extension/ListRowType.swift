@@ -33,6 +33,8 @@ class ListRowType: NSObject {
     @IBOutlet weak var checkImage: WKInterfaceImage!
     
     @IBAction func delete() {
+        
+        controller?.mode = 0
         deleteItem(itemId: id ?? -1)
         readItem()
     }

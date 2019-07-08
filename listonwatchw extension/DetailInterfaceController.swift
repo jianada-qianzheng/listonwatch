@@ -31,7 +31,7 @@ class DetailInterfaceController: WKInterfaceController {
     @IBAction func AddItem() {
         print("add function")
         
-        self.presentTextInputController(withSuggestions: [], allowedInputMode: WKTextInputMode.plain,
+        self.presentTextInputController(withSuggestions: [""], allowedInputMode: WKTextInputMode.plain,
                                         completion:{(results) -> Void in
                                             let aResult = results?[0] as? String
                                             print(aResult)

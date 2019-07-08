@@ -56,7 +56,7 @@ class TitleRowType: NSObject {
     
     @IBAction func delete() {
         
-        mode = 0;
+        controler?.mode = 0;
         //initDataBase()
         deleteTitle(titleId: id ?? -1)
         //titleList.remove(at: row ?? -1)
