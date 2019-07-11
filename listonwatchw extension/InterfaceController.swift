@@ -315,7 +315,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func Add() {
         print("add function")
 
-        self.presentTextInputController(withSuggestions: ["To do list","Grocery list"], allowedInputMode: WKTextInputMode.plain,
+        self.presentTextInputController(withSuggestions: ["To Do List","Grocery List","Travel List"], allowedInputMode: WKTextInputMode.plain,
                                                        completion:{(results) -> Void in
                                                         let aResult = results?[0] as? String
                                                         print(aResult)
